@@ -1,6 +1,6 @@
 {
-  "name": "open-react-template",
-  "version": "0.1.0",
+  "name": "popolo",
+  "description": "This is Popolo Finance Website.",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
@@ -17,10 +17,12 @@
     "url": "https://github.com/cruip/open-react-template.git"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
